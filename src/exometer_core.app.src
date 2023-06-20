@@ -15,12 +15,12 @@
   {mod, {exometer_core_app, []}},
   {start_phases, [{start_reporters, []},
                   {preset_defaults, []}]},
-  {env, [ {exometer_core, [
+  {env, [
    {mongooseim_report_interval, 60000}, %% 60 seconds
    {report, [
      {reporters, [
        {exometer_report_graphite, [
-         {prefix, "mongooseim"},
+         {prefix, "opa"},
          {connect_timeout, 5000},
          {host, "127.0.0.1"},
          {port, 2003},
@@ -28,5 +28,4 @@
        ]}
      ]}
    ]}
- ]}
  ]}]}.
