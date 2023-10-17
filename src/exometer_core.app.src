@@ -16,11 +16,11 @@
   {start_phases, [{start_reporters, []},
                   {preset_defaults, []}]},
   {env, [
-   {opa_report_interval, 60000}, %% 60 seconds
+   {fittr_report_interval, 60000}, %% 60 seconds
    {report, [
      {reporters, [
        {exometer_report_graphite, [
-         {prefix, "opa"},
+         {prefix, "fittr"},
          {connect_timeout, 5000},
          {host, "127.0.0.1"},
          {port, 2003},
